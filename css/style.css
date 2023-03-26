@@ -111,29 +111,36 @@ caption, .legend2 {
     padding: 0 2px 
 }
 
-@media(max-width: 900px) {
-    .toggle {
-        display: block;
-    }
+.burger {
+    display: none;
+}
 
-    nav {
-        width: 100%;
-        padding: 0;
-    }
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
 
+@media screen and (max-width: 768px) {
     .menu {
-        width: 100%;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 6vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
     }
 
     .menu a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto";
-        margin: 0px 10px;
-        font-size: 14px;
-        color: #FFFFFF;
-        text-decoration: none;
+        margin: 40px;
+    }
+
+    .logo {
+        margin-left: 30px;
     }
 
     .inner-container {
@@ -166,5 +173,9 @@ caption, .legend2 {
         background-position-y: 0;
         display: flex;
         justify-content: center;
+    }
+
+    .inner-container {
+        
     }
 }
