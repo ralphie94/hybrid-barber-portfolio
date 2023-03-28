@@ -40,6 +40,11 @@ nav {
     text-align: center;
 }
 
+.book-now-button {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .img-container {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/barber-chair.png) center center/cover no-repeat;
     width: 100%;
@@ -120,9 +125,15 @@ caption, .legend2 {
     height: 3px;
     background-color: rgb(226, 226, 226);
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+        position: relative;
+    }
+
     .menu {
         position: absolute;
         right: 0px;
@@ -133,14 +144,19 @@ caption, .legend2 {
         flex-direction: column;
         align-items: center;
         z-index: 1;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
 
     .menu a {
         margin: 40px;
+        opacity: 0;
     }
 
-    .logo {
-        margin-left: 30px;
+    .burger {
+        display: block;
+        cursor: pointer;
     }
 
     .inner-container {
@@ -175,7 +191,35 @@ caption, .legend2 {
         justify-content: center;
     }
 
-    .inner-container {
-        
+    .legend2 {
+        left: 22%;
     }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
