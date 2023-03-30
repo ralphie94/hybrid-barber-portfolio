@@ -22,3 +22,14 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const navClose = () => {
+    const nav = document.querySelector(".menu");
+    const navLinks = document.querySelectorAll(".menu a");
+
+    navLinks.addEventListener("click", () => {
+        navLinks.classList.toggle("nav");
+    })
+}
+
+navClose();

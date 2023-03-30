@@ -3,6 +3,10 @@ html, body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -210,7 +214,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60px;
+    width: 70px;
+    margin-top: 30px;
 }
 
 .social-icons i {
@@ -283,6 +288,23 @@ p {
 
     .legend2 {
         left: 22%;
+    }
+
+    p {
+        font-family: "Montserrat";
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .footer-button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .footer-line {
+        width: 280px;
     }
 }
 
