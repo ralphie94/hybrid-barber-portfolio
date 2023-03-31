@@ -19,17 +19,19 @@ const navSlide = () => {
         //Burger animation
         burger.classList.toggle("toggle");
     });
+
+    nav.addEventListener('click', (e) => {
+        if (!e.target.matches('a')) return;
+    
+        console.log(e.target);
+    
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+        
+        navLinks.forEach(link => {
+          link.style.animation = '';
+        })
+    });
 }
 
 navSlide();
-
-const navClose = () => {
-    const nav = document.querySelector(".menu");
-    const navLinks = document.querySelectorAll(".menu a");
-
-    navLinks.addEventListener("click", () => {
-        navLinks.classList.toggle("nav");
-    })
-}
-
-navClose();
