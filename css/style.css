@@ -132,6 +132,11 @@ caption, .legend2 {
     transition: all 0.3s ease;
 }
 
+#gallery {
+    height: 54rem;
+    margin-top: 5rem
+}
+
 .gallery-title {
     text-align: center;
     font-family: "Montserrat";
@@ -288,6 +293,11 @@ p {
 
     .legend2 {
         left: 22%;
+    }
+
+    #gallery {
+        height: 40rem;
+        margin-top: 0;
     }
 
     p {
