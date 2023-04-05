@@ -83,6 +83,10 @@ h2 {
     margin-top: 10px;
 }
 
+.inner-container h2 {
+    margin-top: 20px;
+}
+
 .inner-container a {
     background-color: #000000;
     width: 190px;
