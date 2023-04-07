@@ -403,6 +403,10 @@ footer p {
         height: 30px;
         width: 30px;
     }
+
+    .testimonial-slider {
+        height: auto;
+    }
 }
 
 .nav-active {
