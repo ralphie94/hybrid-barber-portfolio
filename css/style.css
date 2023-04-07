@@ -182,7 +182,7 @@ footer {
     flex-direction: column;
 }
 
-p {
+footer p {
     font-family: "Montserrat";
     font-size: 26px;
     font-weight: 400;
@@ -230,6 +230,80 @@ p {
 .social-icons i {
     color: #fff;
     font-size: 30px;
+}
+
+.testimonial-slider {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.slide p {
+    color:#000000;
+    text-align: center;
+    padding: 0 100px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    font-family: "Montserrat";
+    line-height: 1.6;
+}
+
+.testimonial .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+.slide .quote-icon {
+    font-size: 30px;
+}
+
+.details .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.slide {
+    margin: auto;
+}
+
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 768px) {
@@ -319,6 +393,15 @@ p {
 
     .footer-line {
         width: 280px;
+    }
+
+    .slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        height: 30px;
+        width: 30px;
     }
 }
 
